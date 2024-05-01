@@ -1,0 +1,36 @@
+*{
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+}
+
+.tea-logo {
+    height: 50px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabs {
+    display:flex;
+    align-items: center;
+}
+
+.tabs p{
+    margin: 0 15px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
