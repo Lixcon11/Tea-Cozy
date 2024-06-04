@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     font-family: Helvetica;
-    font-size: 22px;
+    font-size: 16px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
     text-align: center;
 }
 
-& h2 {
+h2 {
     font-size: 28px;
     margin-bottom: 15px;
 }
@@ -25,7 +25,9 @@ header {
     z-index: 10;
     
     & .tea-logo {
-        height: 50px;
+        
+        height: 25px;
+
         align-self: center;
         margin-left: 10px;
     }
@@ -35,7 +37,10 @@ header {
         align-items: center;
 
         & a {
-            margin: 0 15px;
+            font-size: 12px;
+            font-weight: 700;
+
+            margin: 0 5px;
             text-decoration: underline;
         }
     }
@@ -50,12 +55,14 @@ main {
     gap: 70px;
 
     & .mission {
-        height: 700px;
+        height: 400px;
         width: 95%;
         background-image: url("./src/images/img-mission-background.webp");
+
         background-repeat: no-repeat;
         background-size: 100% 100%;
         min-height: 100vh;
+        
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -96,7 +103,6 @@ main {
     & .locations {
 
         width: 95%;
-        height: 500px;
         background-image: url("./src/images/img-locations-background.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -150,6 +156,60 @@ footer {
         bottom: 20px;
         left: 10px;
     }
+}
+
+@media only screen and (min-width: 1000px) {
+    *{
+        font-size: 22px;
+    }
+    
+    header {
+        
+        & .tea-logo {
+            height: 50px;
+        }
+    
+        & nav a{
+            font-size: 16px;
+            margin: 0 15px;
+            font-weight: 400;
+        }
+    }
+    
+    main {
+    
+        & .mission {
+            height: 700px;
+        }
+    
+        & .featured-tea {
+            width: 80%;
+    
+            & .tea-container {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               gap: 25px;
+               margin-top: 15px;
+    
+                & div {
+    
+                    & img {
+                        width: 300px;
+                        height: 200px;
+                    }
+    
+                    & p {
+                        padding-top: 7px;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    
+        
+    }
+    
 }
 
 
