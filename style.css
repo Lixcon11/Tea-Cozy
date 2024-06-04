@@ -17,6 +17,8 @@ header {
     border-bottom: 1px solid seashell;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
+    
     & .tea-logo {
         height: 50px;
         align-self: center;
@@ -35,7 +37,33 @@ header {
 }
 
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     & .mission {
+        transform: translateY(69px);
+        height: 700px;
+        width: 95%;
+        background-image: url("/images/img-mission-background.webp");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        & .text {
+            padding: 15px;
+            width: 100%;
+            opacity: 1;
+
+            & h2 {
+                font-size: 28px;
+                margin-bottom: 15px;
+            }
+        }
     }
 }
 
