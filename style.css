@@ -40,12 +40,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    transform: translateY(69px);
+    gap: 70px;
 
     & .mission {
-        transform: translateY(69px);
         height: 700px;
         width: 95%;
-        background-image: url("/images/img-mission-background.webp");
+        background-image: url("/src/images/img-mission-background.webp");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         min-height: 100vh;
@@ -62,6 +64,36 @@ main {
             & h2 {
                 font-size: 28px;
                 margin-bottom: 15px;
+            }
+        }
+    }
+
+    & .featured-tea {
+        width: 80%;
+
+        & h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        & .tea-container {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           gap: 25px;
+           margin-top: 15px;
+
+            & div {
+
+                & img {
+                    width: 300px;
+                    height: 200px;
+                }
+
+                & p {
+                    padding-top: 7px;
+                    font-weight: bold;
+                }
             }
         }
     }
